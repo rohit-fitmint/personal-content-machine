@@ -44,6 +44,37 @@ sources but are never required — the machine works from Claude sessions + git 
 
 ---
 
+## Use it in Cursor, Codex, or any other agent
+
+The Claude *plugin wrapper* is Claude-only, but the engine is plain markdown + two scripts, so it
+runs anywhere via the cross-tool installer. From your project folder:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/rohit-fitmint/personal-content-machine/main/install.sh | bash
+```
+
+…or clone and run `./install.sh`. It **auto-detects** your tools (or pass `--tool`), scaffolds
+`config/`, `content/`, `scripts/`, drops a universal [`AGENTS.md`](AGENTS.md), and generates native
+commands for each:
+
+| Tool | You get | Invoke as |
+|------|---------|-----------|
+| **Cursor** | `.cursor/commands/*.md` + a voice rule in `.cursor/rules/` | `/oracle`, `/draft`, `/daily` |
+| **Codex CLI** | prompts in `~/.codex/prompts/cm-*.md` + `AGENTS.md` | `/cm-oracle`, `/cm-draft`, `/cm-daily` |
+| **Claude Code (local, no plugin)** | `.claude/commands/*.md` + script allowlist | `/oracle`, `/draft`, `/daily` |
+| **Anything else** (Windsurf, Copilot, Gemini CLI, Zed, Aider…) | `AGENTS.md` | say *"run the oracle stage"* |
+
+```bash
+./install.sh --tool cursor            # just Cursor
+./install.sh --tool all --target ~/x  # everything, into a chosen folder
+```
+
+`AGENTS.md` is the tool-agnostic source of truth — any [AGENTS.md](https://agents.md)-aware agent
+reads it and runs the pipeline with no per-tool setup. Connectors use each tool's own MCP config
+(`.cursor/mcp.json`, `~/.codex/config.toml`, or `/mcp` in Claude Code).
+
+---
+
 ## Daily flow
 
 ```
