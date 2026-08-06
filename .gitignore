@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+*.log
+
+# This repo is the PLUGIN. A user's personal content/config is scaffolded into THEIR
+# own project by /content-machine:init and never lives here.
+/config/
+/content/

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/parse-sessions.mjs:*)",
+      "Bash(bash scripts/git-digest.sh:*)",
+      "Bash(date:*)"
+    ]
+  }
+}

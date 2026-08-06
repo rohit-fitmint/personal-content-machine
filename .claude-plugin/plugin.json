@@ -1,0 +1,23 @@
+{
+  "name": "content-machine",
+  "displayName": "Content Machine",
+  "version": "1.0.0",
+  "description": "A Claude-native daily content system for building in public: mines what you actually did, hands you 15 ranked X post ideas, interviews you, drafts in your real voice, scrubs 33 AI-writing tells, runs a writers' council to 9+/10, and learns from every edit. Nothing auto-posts.",
+  "author": {
+    "name": "Rohit Sharma",
+    "url": "https://github.com/rohit-fitmint"
+  },
+  "homepage": "https://github.com/rohit-fitmint/personal-content-machine",
+  "repository": "https://github.com/rohit-fitmint/personal-content-machine",
+  "license": "MIT",
+  "keywords": [
+    "content",
+    "writing",
+    "build-in-public",
+    "twitter",
+    "x",
+    "anti-slop",
+    "voice",
+    "creator"
+  ]
+}

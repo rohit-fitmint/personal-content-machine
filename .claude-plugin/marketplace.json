@@ -1,0 +1,17 @@
+{
+  "name": "content-machine",
+  "owner": {
+    "name": "Rohit Sharma",
+    "url": "https://github.com/rohit-fitmint"
+  },
+  "plugins": [
+    {
+      "name": "content-machine",
+      "source": ".",
+      "description": "Daily content system for building in public: Oracle idea-mining, voice-matched drafting, a 33-pattern anti-slop humanizer, a writers' council, and a lessons flywheel. Nothing auto-posts.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["content", "build-in-public", "x", "anti-slop"]
+    }
+  ]
+}
