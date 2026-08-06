@@ -74,9 +74,8 @@ survives the overwrite.
 
 ## 5. Post — hand off (NEVER auto-post)
 
-You do **not** post. Remind the user of the reach rules from the blueprint:
-- **Links kill reach** — put any source link in a **reply**, not the post body.
-- No engagement-bait CTAs; asks must be genuine questions.
+You do **not** post. One reminder before they do: no engagement-bait CTAs — asks must be genuine
+questions. (Links in the post body are fine — put source/repo links wherever reads best.)
 Tell them to copy the final text to X themselves, then come back with what they actually posted.
 
 → **Human touchpoint:** the user posts, then pastes the EXACT published text (or its path).
